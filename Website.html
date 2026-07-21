@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theophillus Keletso Moseki Portfolio</title>
+  <style>
+    /* General styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #2f2f2f;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1c1c1c;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2ecc71;
+      border-radius: 5px;
+    }
+
+    /* Section styling */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #2ecc71;
+    }
+
+    /* Home section */
+    #home img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    .roles {
+      background-color: white;
+      color: black;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Qualifications */
+    .qualifications p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Skills section */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .skill {
+      text-align: center;
+      width: 150px;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    /* About Me */
+    .about-me {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #3a3a3a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+      }
+      .skills-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#qualifications">QUALIFICATIONS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#about">ABOUT ME</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <img src="your-profile-image.jpg" alt="Theophillus Keletso Moseki">
+    <h1>Theophillus Keletso Moseki</h1>
+    <div class="roles">Data Scientist | Statistician | Applied Mathematician</div>
+  </section>
+
+  <!-- Qualifications Section -->
+  <section id="qualifications" class="qualifications">
+    <h2>Qualifications</h2>
+    <p><strong>BSc (Mathematical Computer Sciences)</strong><br>
+    Majors: Statistics | Applied Mathematics<br>
+    Institution: Sol Plaatje University<br>
+    2019 - 2026</p>
+
+    <p><strong>PGDip (Data Science)</strong><br>
+    Institution: STADIO<br>
+    2026 - Present</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="python-logo.png" alt="Python">
+        <div>Python</div>
+      </div>
+      <div class="skill">
+        <img src="statistics-icon.png" alt="Statistics">
+        <div>Statistics</div>
+      </div>
+      <div class="skill">
+        <img src="excel-logo.png" alt="Excel">
+        <div>Excel</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-me">
+      <p>I am a Postgraduate Diploma student in Data Science at STADIO, building on my BSc in Mathematical Computer Sciences (Applied Mathematics & Statistics) from Sol Plaatje University. My academic journey reflects consistent high performance:</p>
+
+      <p><strong>Working with Data module:</strong> 81%<br>
+      <strong>Introduction to Data Science & Statistics module:</strong> 76%</p>
+
+      <p>These results highlight my ability to master complex statistical concepts and apply them to real-world datasets with precision.</p>
+
+      <p>Currently, I am gaining hands-on industry exposure as a Technical Business Support Trainee at Umuzi.</p>
+
+      <p>My skills include Python programming, statistical modeling, machine learning, and data visualization, with proven ability to clean, analyze, and present insights that drive decision-making.</p>
+
+      <p>I am passionate about leveraging data to solve meaningful problems and thrive in collaborative environments where I can both learn from experienced professionals and deliver measurable impact. I am actively seeking internship and graduate opportunities where I can apply my analytical expertise, strengthen my Data Science and machine learning capabilities, and contribute to innovative projects.</p>
+    </div>
+  </section>
+
+  <!-- Smooth scroll script -->
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
